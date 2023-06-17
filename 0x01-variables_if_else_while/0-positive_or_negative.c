@@ -1,9 +1,14 @@
 #include <stdlib.h>
-#include <stdio.h>
+#include <stdio.hiiii>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ *
+ *main r return 0 (suceess)
+ *
+ * use of if statatment to iterate through input n
+ *
+ */
 int main(void)
 {
 	int n;
