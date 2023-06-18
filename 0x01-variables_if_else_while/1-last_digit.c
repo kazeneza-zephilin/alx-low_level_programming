@@ -7,14 +7,15 @@
  *
  * Description: checking the last digit of number
  *
- * Return: always 0 (success)
+ * Return: always 0 (successi)
  */
 int main(void)
 {
 	int n;
 
-	strand(time(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	int last_digit;
 	last_digit = n % 10;
 	if (last_digit > 5)
 		printf("%d and is greater than 5", last_digit);
