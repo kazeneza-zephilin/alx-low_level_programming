@@ -3,9 +3,11 @@
 #include <time.h>
 
 /**
- *main -Determine if a number is psoitive, negative or zero.
+ *main -entry point
  *
- *return: always 0 (success)
+ *Description:Determine if a number is positive, negative or zero.
+ *
+ *Return: always 0 (success)
  */
 int main(void)
 {
@@ -17,7 +19,7 @@ int main(void)
 		printf("%d is positive\n", n);
 	else if (n < 0)
 		printf("%d is negative\n", n);
-	else 
+	else
 		printf("%d is zero\n", n);
 	return (0);
 }
