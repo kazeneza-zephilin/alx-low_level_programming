@@ -3,11 +3,9 @@
 #include <time.h>
 
 /**
+ *main -Determine if a number is psoitive, negative or zero.
  *
- *main r return 0 (suceess)
- *
- * use of if statatment to iterate through input n
- *
+ *return: always 0 (success)
  */
 int main(void)
 {
