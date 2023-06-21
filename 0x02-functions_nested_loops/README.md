@@ -72,14 +72,14 @@ _putchar.c CODE
 
 
 #include "main.h"
-	#include <unistd.h>
-	/**
-	 * _putchar - writes the character c to stdout
-	 * @c: The character to print
-	 *
-	 * Return: On success 1.
-	 * On error, -1 is returned, and errno is set appropriately.
-	 */
+#include <unistd.h>
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 	int _putchar(char c)
 	{
 		return (write(1, &c, 1));
@@ -126,11 +126,11 @@ main.h CODE
 
 
 #include "main.h"
-	/**
-	 * main - print _putchar
-	 * is written by mbah
-	 * Return: 0
-	 */
+/**
+ * main - print _putchar
+ * is written by mbah
+ * Return: 0
+ */
 
 
 	int main(void)
@@ -158,9 +158,9 @@ main.h CODE
 #include "main.h"
 
 
-	/**
-	 * print_alphabet - print all alphabet in lowercase
-	 */
+/**
+ * print_alphabet - print all alphabet in lowercase
+ */
 
 
 	void print_alphabet(void)
@@ -186,11 +186,11 @@ main.h CODE
 #include "main.h"
 
 
-	/**
-	 * main - check the code
-	 *
-	 * Return: Always 0.
-	 */
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 	int main(void)
 	{
 	    print_alphabet();
@@ -209,10 +209,10 @@ main.h CODE
 #include "main.h"
 
 
-	/**
-	 * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
-	 * followed by a new line
-	 */
+/**
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+ * followed by a new line
+ */
 	void print_alphabet_x10(void)
 	{
 		char ch;
@@ -247,11 +247,11 @@ main.h CODE
 #include "main.h"
 
 
-	/**
-	 * main - check the code.
-	 *
-	 * Return: Always 0.
-	 */
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
 	int main(void)
 	{
 	    print_alphabet_x10();
@@ -269,11 +269,11 @@ main.h CODE
 #include "main.h"
 
 
-	/**
-	 * _islower - check if char is lowercase
-	 * @c: is the char to be checked
-	 * Return: 1 if char is lowercase, otherwise 0.
-	 */
+/**
+ * _islower - check if char is lowercase
+ * @c: is the char to be checked
+ * Return: 1 if char is lowercase, otherwise 0.
+ */
 
 
 	int _islower(int c)
@@ -343,11 +343,11 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * _isalpha - checks for alphabetic character
-	 * @c: the character to be checked
-	 * Return: 1 if c is a letter, 0 otherwise
-	 */
+/**
+ * _isalpha - checks for alphabetic character
+ * @c: the character to be checked
+ * Return: 1 if c is a letter, 0 otherwise
+ */
 	int _isalpha(int c)
 	{
 		return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
@@ -365,11 +365,11 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * main - check the code.
-	 *
-	 * Return: Always 0.
-	 */
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
 	int main(void)
 	{
 	    int r;
@@ -389,7 +389,6 @@ int main(void)
 
 
 
-
 =====================================
 
 
@@ -399,13 +398,13 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * print_sign - prints the sign of a number
-	 * @n: the int to check
-	 * Return: 1 and prints + if n is greater than zero
-	 * 0 and prints 0 if n is zero
-	 * -1 and prints - if n is less than zero
-	 */
+/**
+ * print_sign - prints the sign of a number
+ * @n: the int to check
+ * Return: 1 and prints + if n is greater than zero
+ * 0 and prints 0 if n is zero
+ * -1 and prints - if n is less than zero
+ */
 	int print_sign(int n)
 	{
 		if (n > 0)
@@ -434,11 +433,11 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * main - check the code.
-	 *
-	 * Return: Always 0.
-	 */
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
 	int main(void)
 	{
 	    int r;
@@ -477,11 +476,11 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * _abs - computes the absolute value of an integer
-	 * @n: the int to check
-	 * Return: the absolute value of int
-	 */
+/**
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
+ */
 	int _abs(int n)
 	{
 		if (n >= 0)
@@ -591,10 +590,10 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * jack_bauer - prints every minute of the day of Jack Bauer
-	 * starting from 00:00 to 23:59
-	 */
+/**
+ * jack_bauer - prints every minute of the day of Jack Bauer
+ * starting from 00:00 to 23:59
+ */
 	void jack_bauer(void)
 	{
 		int i, j;
@@ -647,9 +646,9 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * times_table - prints the 9 times table, starting with 0
-	 */
+/**
+ * times_table - prints the 9 times table, starting with 0
+ */
 	void times_table(void)
 	{
 		int i, j, k;
@@ -695,11 +694,11 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * main - check the code
-	 *
-	 * Return: Always 0.
-	 */
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 	int main(void)
 	{
 	    times_table();
@@ -717,12 +716,12 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * add - adds two integers and returns the result
-	 * @a: int to be added to b
-	 * @b: int to be added to a
-	 * Return: sum of a and b
-	 */
+/**
+ * add - adds two integers and returns the result
+ * @a: int to be added to b
+ * @b: int to be added to a
+ * Return: sum of a and b
+ */
 	int add(int a, int b)
 	{
 		int c;
@@ -770,11 +769,11 @@ int main(void)
 	#include "main.h"
 
 
-	/**
-	 * print_to_98 - prints all natural numbers from n to 98,
-	 * followed by a new line
-	 * @n: print from this number
-	 */
+/**
+ * print_to_98 - prints all natural numbers from n to 98,
+ * followed by a new line
+ * @n: print from this number
+ */
 	void print_to_98(int n)
 	{
 		int i, j;
@@ -813,11 +812,11 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * main - check the code
-	 *
-	 * Return: Always 0.
-	 */
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 	int main(void)
 	{
 	    print_to_98(0);
@@ -840,10 +839,10 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * print_times_table - prints the n times table, starting with 0
-	 * @n: number of the times table
-	 */
+/**
+ * print_times_table - prints the n times table, starting with 0
+ * @n: number of the times table
+ */
 	void print_times_table(int n)
 	{
 		int i, j, k;
@@ -899,11 +898,11 @@ int main(void)
 #include "main.h"
 
 
-	/**
-	 * main - check the code.
-	 *
-	 * Return: Always 0.
-	 */
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
 	int main(void)
 	{
 	    print_times_table(3);
@@ -934,12 +933,12 @@ int main(void)
 	#include <stdio.h>
 
 
-	/**
-	 * main - Lists all the natural numbers below 1024 (excluded)
-	 *        that are multiples of 3 or 5.
-	 *
-	 * Return: Always 0.
-	 */
+/**
+ * main - Lists all the natural numbers below 1024 (excluded)
+ *        that are multiples of 3 or 5.
+ *
+ * Return: Always 0.
+ */
 	int main(void)
 	{
 		int i, sum = 0;
@@ -972,12 +971,12 @@ int main(void)
 #include <stdio.h>
 
 
-	/**
-	 * main - Prints first 50 Fibonacci numbers, starting with 1 and 2,
-	 *        separated by a comma followed by a space.
-	 *
-	 * Return: Always 0.
-	 */
+/**
+ * main - Prints first 50 Fibonacci numbers, starting with 1 and 2,
+ *        separated by a comma followed by a space.
+ *
+ * Return: Always 0.
+ */
 	int main(void)
 	{
 		int count;
@@ -1016,11 +1015,11 @@ int main(void)
 #include <stdio.h>
 
 
-	/**
-	 * main - finds and prints the sum of the even-valued terms
-	 * followed by a new line
-	 * Return: Always 0 (Success)
-	 */
+/**
+ * main - finds and prints the sum of the even-valued terms
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 	int main(void)
 	{
 		int i;
@@ -1062,13 +1061,13 @@ int main(void)
 #include <stdio.h>
 
 
-	/**
-	 * main - fibonacci <3
-	 *
-	 * Purpose - no hardcode
-	 *
-	 * Return:  (Success)
-	 */
+/**
+ * main - fibonacci <3
+ *
+ * Purpose - no hardcode
+ *
+ * Return:  (Success)
+ */
 
 
 	int main(void)
