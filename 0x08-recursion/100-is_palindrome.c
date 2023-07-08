@@ -7,23 +7,23 @@
  */
 int is_palindrome(char *s)
 {
-    int length = 0;
-    int i;
+	int length = 0;
+	int i;
 
-    /* Calculate the length of the string */
-    while (s[length] != '\0')
-    {
-        length++;
-    }
+	/* Calculate the length of the string */
+	while (s[length] != '\0')
+	{
+		length++;
+	}
 
-    /* Check for palindrome */
-    for (i = 0; i < length / 2; i++)
-    {
-        if (s[i] != s[length - i - 1])
-        {
-            return 0; /* Not a palindrome */
-        }
-    }
+	/* Check for palindrome */
+	for (i = 0; i < length / 2; i++)
+	{
+		if (s[i] != s[length - i - 1])
+		{
+			return (0); /* Not a palindrome */
+		}
+	}
 
-    return 1; /* Palindrome */
+	return (1); /* Palindrome */
 }
