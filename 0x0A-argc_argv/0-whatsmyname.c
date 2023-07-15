@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 	(void)argc;
-	printf("the name of program is %s\n", argv[0]);
+	printf("the name of program is %s\n", *argv);
 	return (0);
 
 }
