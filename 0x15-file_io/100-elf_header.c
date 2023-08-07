@@ -18,9 +18,10 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf - Check if a file is an ELF file.
- * @e_ident: Pointer to an array containing the ELF magic numbers.
- * Exit code: 98 if not an ELF file.
+ * check_elf - Checks if a file is an ELF file.
+ * @e_ident: A pointer to an array containing the ELF magic numbers.
+ *
+ * Description: If the file is not an ELF file - exit code 98.
  */
 void check_elf(unsigned char *e_ident)
 {
@@ -40,8 +41,8 @@ void check_elf(unsigned char *e_ident)
 }
 
 /**
- * print_magic - Print the magic numbers of an ELF header
- * @e_ident: Pointer to an array containing the ELF magic numbers.
+ * print_magic - Prints the magic numbers of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
  * Description: Magic numbers are separated by spaces.
  */
@@ -63,9 +64,8 @@ void print_magic(unsigned char *e_ident)
 }
 
 /**
- * print_class - Print the class of an ELF header.
- * @e_ident: Pointer to an array containing the ELF class.
- * Description: Prints the class of the ELF header (32-bit or 64-bit).
+ * print_class - Prints the class of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_class(unsigned char *e_ident)
 {
@@ -88,10 +88,8 @@ void print_class(unsigned char *e_ident)
 }
 
 /**
- * print_data - Print the data of an ELF header.
- * @e_ident: Pointer to an array containing the ELF class.
- * Description: Prints the data encoding of the ELF header 
-  (little endian or big endian).
+ * print_data - Prints the data of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_data(unsigned char *e_ident)
 {
@@ -114,9 +112,9 @@ void print_data(unsigned char *e_ident)
 }
 
 /**
- *  * print_version - Prints the version of an ELF header.
- *   * @e_ident: A pointer to an array containing the ELF version.
- *Description: Prints the version of the ELF header
+ * Print_version - Prints the version of an ELF header.
+ *@e_ident: A pointer to an array containing the ELF version.
+ *
  */
 void print_version(unsigned char *e_ident)
 {
@@ -135,8 +133,8 @@ void print_version(unsigned char *e_ident)
 }
 
 /**
- * print_osabi - Print the OS/ABI of an ELF header.
- * @e_ident: Pointer to an array containing the ELF version.
+ * print_osabi - Prints the OS/ABI of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF version.
  */
 void print_osabi(unsigned char *e_ident)
 {
@@ -180,8 +178,8 @@ void print_osabi(unsigned char *e_ident)
 }
 
 /**
- * print_abi - Print the type of an ELF header.
- * @e_ident: Pointer to an array containing the ELF class.
+ * print_abi - Prints the ABI version of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF ABI version.
  */
 void print_abi(unsigned char *e_ident)
 {
@@ -224,10 +222,9 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 }
 
 /**
- * print_entry - Print the entry point of an ELF header.
+ * print_entry - Prints the entry point of an ELF header.
  * @e_entry: The address of the ELF entry point.
- * @e_ident: Pointer to an array containing the ELF class.
- * Description: Prints the entry point address of the ELF header.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
@@ -251,8 +248,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  * close_elf - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
  *
- * Description:  Closes the file descriptor of the ELF file.
- * Exit code: 98 if the file cannot be closed.
+ * Description: If the file cannot be closed - exit code 98.
  */
 void close_elf(int elf)
 {
@@ -273,7 +269,7 @@ void close_elf(int elf)
  * Return: 0 on success.
  *
  * Description: If the file is not an ELF File or
- * Exit code: 98 if the file is not an ELF file or the function fails.
+ * the function fails - exit code 98.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
